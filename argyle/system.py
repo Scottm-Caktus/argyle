@@ -40,7 +40,7 @@ def upgrade_apt_packages():
 def add_ppa(name):
     """Add personal package archive."""
 
-    sudo(u"add-apt-repository %s" % name)
+    sudo(u"add-apt-repository -y %s" % name)
     update_apt_sources()
 
 
